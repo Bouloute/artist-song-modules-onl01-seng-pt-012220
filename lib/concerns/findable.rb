@@ -1,6 +1,6 @@
 module findable
 
   def find_by_name(name)
-    self.all.select{|obj| obj.name == name}
+    self.all.detect{|obj| obj.name == name}
   end
 end
